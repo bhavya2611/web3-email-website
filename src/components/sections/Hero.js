@@ -61,7 +61,7 @@ const Hero = ({
               data-reveal-delay="200"
             >
               Enabling Web3{" "}
-              <span className="text-color-primary">Email Communications</span>
+              <span className="text-color-primary">Email Communication</span>
             </h1>
             <div className="container-xs">
               <p
