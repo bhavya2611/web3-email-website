@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
-import ButtonGroup from "../elements/ButtonGroup";
-import Button from "../elements/Button";
+// import ButtonGroup from "../elements/ButtonGroup";
+// import Button from "../elements/Button";
 import Image from "../elements/Image";
-import Modal from "../elements/Modal";
+// import Modal from "../elements/Modal";
 
 const propTypes = {
   ...SectionProps.types,
@@ -24,17 +24,17 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
-  const [videoModalActive, setVideomodalactive] = useState(false);
+  // const [videoModalActive, setVideomodalactive] = useState(false);
 
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  };
+  // const openModal = (e) => {
+  //   e.preventDefault();
+  //   setVideomodalactive(true);
+  // };
 
-  const closeModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(false);
-  };
+  // const closeModal = (e) => {
+  //   e.preventDefault();
+  //   setVideomodalactive(false);
+  // };
 
   const outerClasses = classNames(
     "hero section center-content",
@@ -71,7 +71,7 @@ const Hero = ({
                 We are making communications between DApps and Wallet Addresses
                 possible
               </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
+              {/* <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button
                     tag="a"
@@ -90,36 +90,34 @@ const Hero = ({
                     View on Github
                   </Button>
                 </ButtonGroup>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div
-            className="hero-figure reveal-from-bottom illustration-element-01"
-            data-reveal-value="20px"
-            data-reveal-delay="800"
-          >
-            <a
+          <div className="hero-figure reveal-from-bottom illustration-element-01">
+            {/* <a
               data-video="https://player.vimeo.com/video/174002812"
               href="#0"
               aria-controls="video-modal"
               onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require("./../../assets/images/video-placeholder.jpg")}
-                alt="Hero"
-                width={896}
-                height={504}
-              />
-            </a>
+            > */}
+            <Image
+              className="has-shadow"
+              src={require("./../../assets/images/mail-home.jpg")}
+              alt="Hero"
+              width={896}
+              style={{ filter: "grayscale(1)" }}
+              // height={504}
+            />
+            {/* </a> */}
+            {/* https://api.whatsapp.com/send/?phone=918446714363&text=hi&app_absent=0 */}
           </div>
-          <Modal
+          {/* <Modal
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
             video="https://player.vimeo.com/video/174002812"
             videoTag="iframe"
-          />
+          /> */}
         </div>
       </div>
     </section>

@@ -216,6 +216,17 @@ const FeaturesTiles = ({
               </div>
             </div>
           </div>
+          <hr />
+          <div style={{ textAlign: "center", paddingTop: 80 }}>
+            <h2>Why Businesses & Users need this?</h2>
+            <p>
+              The answer is simple, every businesses needs to have formal
+              communications with their customers. For users also, the
+              transactional communication is extremely important. Lastly, when
+              you can connect with your users directly, the engagement
+              multifolds and can drastically increase adoption.
+            </p>
+          </div>
         </div>
       </div>
     </section>
